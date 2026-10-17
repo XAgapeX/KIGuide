@@ -1,0 +1,86 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Ekran główny aplikacji (Skaner iBeacon)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Main app screen (iBeacon Scanner)"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ekran główny aplikacji (iBeacon Scanner)"
+          }
+        }
+      }
+    },
+    "INTERAKTYWNY PRZEWODNIK" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "INTERACTIVE GUIDE"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "INTERAKTYWNY PRZEWODNIK"
+          }
+        }
+      }
+    },
+    "Odkrywaj w AR" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Discover in AR"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Odkrywaj w AR"
+          }
+        }
+      }
+    },
+    "Rozpocznij zwiedzanie" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start exploring"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rozpocznij zwiedzanie"
+          }
+        }
+      }
+    },
+    "Witaj w wirtualnym przewodniku po Katedrze Informatyki!" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome to the virtual guide of the IT Department!"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Witaj w wirtualnym przewodniku po Katedrze Informatyki!"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

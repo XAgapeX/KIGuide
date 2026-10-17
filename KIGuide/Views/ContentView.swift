@@ -8,14 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+   
+    @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding = false
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        Group {
+            if hasSeenOnboarding {
+                Text("Ekran główny aplikacji (Skaner iBeacon)")
+                    .font(.title)
+                    .foregroundColor(.gray)
+            } else {
+                OnboardingScreen(hasSeenOnboarding: $hasSeenOnboarding)
+            }
         }
-        .padding()
+        .animation(.easeInOut, value: hasSeenOnboarding)
     }
 }
 
