@@ -2,7 +2,7 @@
 //  KIGuideApp.swift
 //  KIGuide
 //
-//  Created by Katarzyna on 13/10/2026.
+//  Created by Katarzyna na 13/10/2026.
 //
 
 import SwiftUI
@@ -20,9 +20,19 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct KIGuideApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     
+    @AppStorage("hasSeenOnboarding") private var hasSeenOnboarding: Bool = false
+    
+    @StateObject private var beaconManager = BeaconManager()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            if hasSeenOnboarding {
+                ContentView()
+                    .environmentObject(beaconManager)
+            } else {
+                OnboardingScreen(hasSeenOnboarding: $hasSeenOnboarding)
+                    .environmentObject(beaconManager)
+            }
         }
     }
 }

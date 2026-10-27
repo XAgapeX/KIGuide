@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0B04185A3083D6CE002D4550 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0B0418593083D6CE002D4550 /* GoogleService-Info.plist */; };
 		0B04185D3083DC40002D4550 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 0B04185C3083DC40002D4550 /* FirebaseFirestore */; };
 		0B04185F3083DC40002D4550 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 0B04185E3083DC40002D4550 /* FirebaseFirestoreSwift */; };
 		0B7D00B0307E2E490087F3E3 /* KIGuideApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7D00AF307E2E490087F3E3 /* KIGuideApp.swift */; };
@@ -19,6 +18,8 @@
 		0B7D00CD307E2E4C0087F3E3 /* KIGuideUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B7D00CC307E2E4C0087F3E3 /* KIGuideUITestsLaunchTests.swift */; };
 		0B9FA3DC307E919700329E17 /* OnboardingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B9FA3DB307E919700329E17 /* OnboardingScreen.swift */; };
 		0BC2C3A9307ECAB2008F4081 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 0BC2C3A8307ECAB2008F4081 /* Localizable.xcstrings */; };
+		0BED5E37308E9D92009896D2 /* BeaconManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BED5E36308E9D92009896D2 /* BeaconManager.swift */; };
+		0BFA9C283091463500AFF83D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0BFA9C273091463400AFF83D /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B0418593083D6CE002D4550 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0B7D00AC307E2E490087F3E3 /* KIGuide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIGuide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B7D00AF307E2E490087F3E3 /* KIGuideApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIGuideApp.swift; sourceTree = "<group>"; };
 		0B7D00B1307E2E490087F3E3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -52,6 +52,8 @@
 		0B7D00CC307E2E4C0087F3E3 /* KIGuideUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIGuideUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0B9FA3DB307E919700329E17 /* OnboardingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingScreen.swift; sourceTree = "<group>"; };
 		0BC2C3A8307ECAB2008F4081 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		0BED5E36308E9D92009896D2 /* BeaconManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeaconManager.swift; sourceTree = "<group>"; };
+		0BFA9C273091463400AFF83D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +106,7 @@
 		0B7D00AE307E2E490087F3E3 /* KIGuide */ = {
 			isa = PBXGroup;
 			children = (
-				0B0418593083D6CE002D4550 /* GoogleService-Info.plist */,
+				0BFA9C273091463400AFF83D /* GoogleService-Info.plist */,
 				0B7D00E0307E2FF60087F3E3 /* Resources */,
 				0B7D00DF307E2FE20087F3E3 /* Managers */,
 				0B7D00DC307E2FAA0087F3E3 /* Models */,
@@ -174,6 +176,7 @@
 		0B7D00DF307E2FE20087F3E3 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				0BED5E36308E9D92009896D2 /* BeaconManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -301,7 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B7D00B7307E2E4B0087F3E3 /* Preview Assets.xcassets in Resources */,
-				0B04185A3083D6CE002D4550 /* GoogleService-Info.plist in Resources */,
+				0BFA9C283091463500AFF83D /* GoogleService-Info.plist in Resources */,
 				0B7D00B4307E2E4B0087F3E3 /* Assets.xcassets in Resources */,
 				0BC2C3A9307ECAB2008F4081 /* Localizable.xcstrings in Resources */,
 			);
@@ -329,6 +332,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B7D00B2307E2E490087F3E3 /* ContentView.swift in Sources */,
+				0BED5E37308E9D92009896D2 /* BeaconManager.swift in Sources */,
 				0B7D00B0307E2E490087F3E3 /* KIGuideApp.swift in Sources */,
 				0B9FA3DC307E919700329E17 /* OnboardingScreen.swift in Sources */,
 			);
@@ -496,9 +500,9 @@
 				DEVELOPMENT_TEAM = KB3QRN2K2C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Wymagane do działania rozszerzonej rzeczywistości.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Wymagane do działania rozszerzonej rzeczywistości.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -509,7 +513,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mierzynska.KIGuide;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mierzynska.KIGuide.v2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -527,9 +531,9 @@
 				DEVELOPMENT_TEAM = KB3QRN2K2C;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "Wymagane do działania rozszerzonej rzeczywistości.";
 				INFOPLIST_KEY_NSCameraUsageDescription = "";
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Wymagane do działania rozszerzonej rzeczywistości.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -540,7 +544,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.mierzynska.KIGuide;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mierzynska.KIGuide.v2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

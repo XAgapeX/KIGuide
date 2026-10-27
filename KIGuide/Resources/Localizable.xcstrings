@@ -2,6 +2,7 @@
   "sourceLanguage" : "en",
   "strings" : {
     "Ekran główny aplikacji (Skaner iBeacon)" : {
+      "extractionState" : "stale",
       "localizations" : {
         "en" : {
           "stringUnit" : {
@@ -33,6 +34,12 @@
         }
       }
     },
+    "Major: %@" : {
+
+    },
+    "Minor: %@" : {
+
+    },
     "Odkrywaj w AR" : {
       "localizations" : {
         "en" : {
@@ -48,6 +55,12 @@
           }
         }
       }
+    },
+    "Odległość: %@ m" : {
+
+    },
+    "Radar iBeacon" : {
+
     },
     "Rozpocznij zwiedzanie" : {
       "localizations" : {
@@ -65,6 +78,9 @@
         }
       }
     },
+    "Szukam sygnału..." : {
+
+    },
     "Witaj w wirtualnym przewodniku po Katedrze Informatyki!" : {
       "localizations" : {
         "en" : {
@@ -80,6 +96,9 @@
           }
         }
       }
+    },
+    "Wykryto najbliższy punkt!" : {
+
     }
   },
   "version" : "1.0"

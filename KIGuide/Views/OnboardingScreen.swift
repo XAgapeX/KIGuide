@@ -6,12 +6,15 @@
 //
 
 import SwiftUI
+import CoreLocation
 
 struct OnboardingScreen: View {
     @Binding var hasSeenOnboarding: Bool
     
     @AppStorage("isDarkMode") private var isDarkMode = false
     @AppStorage("appLanguage") private var appLanguage = "pl"
+    
+    @State private var locationManager = CLLocationManager()
     
     var body: some View {
         ZStack {
@@ -80,7 +83,7 @@ struct OnboardingScreen: View {
                         .padding(.horizontal, 32)
                     
                     Button(action: {
-                        hasSeenOnboarding = true
+                        requestPermissionsAndProceed()
                     }) {
                         Text("Rozpocznij zwiedzanie")
                             .font(.title3)
@@ -99,6 +102,14 @@ struct OnboardingScreen: View {
         }
         .preferredColorScheme(isDarkMode ? .dark : .light)
         .environment(\.locale, Locale(identifier: appLanguage))
+    }
+    
+    private func requestPermissionsAndProceed() {
+        locationManager.requestWhenInUseAuthorization()
+        
+        withAnimation {
+            hasSeenOnboarding = true
+        }
     }
 }
 
